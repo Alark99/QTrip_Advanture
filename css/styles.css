@@ -166,6 +166,7 @@ footer {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: 0.2s all;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
@@ -187,17 +188,52 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width:100%; 
+  height: 100%;
+  border-radius: 0.25rem;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
+
+@media only screen and (max-width:992px){
+    .main_img{
+      grid-column: 1/4;
+      grid-row:1/4;
+    }
+    .sub_img{
+      display: none;
+    }
+}
+@media only screen and (min-width:992px){
+  .main_img{
+    grid-column: 1/3;
+    grid-row:1/3;
+  }
+}
+
+@media only screen and (min-width:992px){
+  .bord{
+    grid-template-rows:auto;
+  }
+}
+
+.bord{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
