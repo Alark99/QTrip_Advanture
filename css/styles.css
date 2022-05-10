@@ -224,7 +224,9 @@ footer {
 
 @media only screen and (min-width:992px){
   .bord{
-    grid-template-rows:auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 118px;
   }
 }
 
