@@ -214,6 +214,10 @@ footer {
     .sub_img{
       display: none;
     }
+    .bord{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
 }
 @media only screen and (min-width:992px){
   .main_img{
